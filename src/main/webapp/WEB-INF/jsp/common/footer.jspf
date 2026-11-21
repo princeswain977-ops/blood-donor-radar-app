@@ -1,0 +1,8 @@
+<%-- footer.jspf: bottom of every page --%>
+</main>
+<footer class="footer">
+    <p>Blood Donor Radar - Ask 3</p>
+</footer>
+<script src="${pageContext.request.contextPath}/js/validate.js"></script>
+</body>
+</html>

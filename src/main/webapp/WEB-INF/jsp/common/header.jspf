@@ -1,0 +1,25 @@
+<%-- header.jspf: top of every page. Each page declares the taglib before including this. --%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${pageTitle} | Blood Donor Radar</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+</head>
+<body>
+<header class="topbar">
+    <h1>Blood Donor Radar</h1>
+    <c:if test="${not empty sessionScope.loggedUser}">
+        <nav>
+            <a href="${pageContext.request.contextPath}/dashboard">Dashboard</a>
+            <a href="${pageContext.request.contextPath}/donors">Donors</a>
+            <a href="${pageContext.request.contextPath}/donors/new">Add Donor</a>
+            <a href="${pageContext.request.contextPath}/donors/search">Radar Search</a>
+            <a href="${pageContext.request.contextPath}/export/donors">Export CSV</a>
+            <a href="${pageContext.request.contextPath}/logout">Logout</a>
+        </nav>
+        <span class="user">Logged in as ${sessionScope.loggedFullName}</span>
+    </c:if>
+</header>
+<main class="container">
