@@ -97,7 +97,7 @@ Screenshots are stored in the `screenshots/` folder.
 
 ## Live Application
 
-Deployed URL: [PASTE YOUR RAILWAY URL HERE]
+Deployed URL: https://blood-donor-radar-app-production.up.railway.app
 
 Login: admin / admin123
 
